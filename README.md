@@ -43,7 +43,7 @@ Optional `MCP_AUTH_TOKEN` → clients send `Authorization: Bearer <token>`.
 Requires Node.js 20+.
 
 ```json
-{ "mcpServers": { "pinterest-pin-engine": { "command": "npx", "args": ["-y", "github:ppiotis/pinterest-pin-engine-mcp"] } } }
+{ "mcpServers": { "pinterest-pin-engine": { "command": "npx", "args": ["-y", "https://github.com/ppiotis/pinterest-pin-engine-mcp/archive/refs/tags/v1.0.0.tar.gz"] } } }
 ```
 
 From source: `git clone https://github.com/ppiotis/pinterest-pin-engine-mcp && cd pinterest-pin-engine-mcp && npm ci && npm run build && node dist/stdio.js`
