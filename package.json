@@ -1,0 +1,55 @@
+{
+  "name": "pinterest-pin-engine-mcp",
+  "version": "1.0.0",
+  "description": "Pinterest content engine MCP server for digital products: pin ideas, title/description copy within limits, board plans, bulk-upload CSV scheduler and analytics insights. No Pinterest login.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Paris Piotis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppiotis/pinterest-pin-engine-mcp"
+  },
+  "homepage": "https://github.com/ppiotis/pinterest-pin-engine-mcp#readme",
+  "keywords": [
+    "mcp",
+    "pinterest",
+    "marketing",
+    "digital-products",
+    "content-planning",
+    "grok-bot",
+    "cursor-plugin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "pinterest-pin-engine-mcp": "dist/stdio.js",
+    "pinterest-pin-engine-mcp-http": "dist/serve-http.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    ".mcp.json",
+    "plugin.json",
+    ".cursor-plugin",
+    "logo.svg"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/stdio.js",
+    "start:http": "node dist/serve-http.js",
+    "test": "npm run build && vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "papaparse": "^5.7.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/papaparse": "^5.5.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

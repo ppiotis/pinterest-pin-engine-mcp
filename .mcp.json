@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pinterest-pin-engine": {
+      "command": "npx",
+      "args": ["-y", "github:ppiotis/pinterest-pin-engine-mcp"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "pinterest-pin-engine",
+  "displayName": "Pinterest Pin Engine",
+  "version": "1.0.0",
+  "description": "Plan Pinterest content for digital products: pin ideas and visual briefs, titles and descriptions within Pinterest limits, keyword boards, a scheduler that outputs bulk-upload CSVs, and insights from your analytics export. No Pinterest login; nothing is posted.",
+  "author": { "name": "Paris Piotis", "url": "https://github.com/ppiotis" },
+  "homepage": "https://github.com/ppiotis/pinterest-pin-engine-mcp",
+  "repository": "https://github.com/ppiotis/pinterest-pin-engine-mcp",
+  "license": "MIT",
+  "logo": "logo.svg",
+  "keywords": ["pinterest", "marketing", "content calendar", "digital products", "social media", "analytics"],
+  "category": "marketing",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
